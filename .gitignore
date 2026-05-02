@@ -1,0 +1,17 @@
+# Nextflow
+.nextflow/
+.nextflow.log*
+work/
+results/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Test outputs
+*.pdb
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,15 +1,0 @@
-Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-Loading ESMFold...
-Loading weights:   0%|          | 0/4498 [00:00<?, ?it/s]Loading weights:   0%|          | 18/4498 [03:27<14:22:42, 11.55s/it]Loading weights:   0%|          | 19/4498 [03:28<13:19:58, 10.72s/it]Loading weights:   1%|          | 40/4498 [03:28<4:08:37,  3.35s/it] Loading weights:   1%|▏         | 66/4498 [03:28<1:51:39,  1.51s/it]Loading weights:   2%|▏         | 101/4498 [03:28<53:59,  1.36it/s] Loading weights:   3%|▎         | 126/4498 [03:28<35:21,  2.06it/s]Loading weights:   4%|▎         | 159/4498 [03:28<21:22,  3.38it/s]Loading weights:   4%|▍         | 202/4498 [03:28<12:17,  5.83it/s]Loading weights:   6%|▌         | 265/4498 [03:28<06:28, 10.89it/s]Loading weights:   7%|▋         | 333/4498 [03:28<03:44, 18.56it/s]Loading weights:   9%|▉         | 399/4498 [03:29<02:21, 28.88it/s]Loading weights:  12%|█▏        | 521/4498 [03:29<01:11, 55.49it/s]Loading weights:  13%|█▎        | 604/4498 [03:29<00:48, 79.52it/s]Loading weights:  15%|█▌        | 689/4498 [03:29<00:33, 112.21it/s]Loading weights: 100%|██████████| 4498/4498 [03:28<00:00, 21.53it/s]
-[transformers] [1mEsmForProteinFolding LOAD REPORT[0m from: facebook/esmfold_v1
-Key                                | Status  | 
------------------------------------+---------+-
-esm.contact_head.regression.weight | MISSING | 
-esm.contact_head.regression.bias   | MISSING | 
-
-Notes:
-- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
-Using device: cuda
-Predicting trp_cage (20 aa)...
-Mean pLDDT: 76.9 / 100
-Done. Saved trp_cage.pdb
