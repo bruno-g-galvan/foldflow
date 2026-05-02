@@ -1,0 +1,17 @@
+nextflow.trace/v2
+realtime=428101
+%cpu=430
+cpu_model=AMD Ryzen 7 3800X 8-Core Processor
+rchar=143075237
+wchar=43712
+syscr=15083
+syscw=80
+read_bytes=12047314944
+write_bytes=40960
+%mem=932
+vmem=54066244
+rss=11424320
+peak_vmem=54068016
+peak_rss=11478072
+vol_ctxt=154675
+inv_ctxt=208

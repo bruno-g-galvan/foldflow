@@ -1,0 +1,15 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading ESMFold...
+Loading weights:   0%|          | 0/4498 [00:00<?, ?it/s]Loading weights:   0%|          | 18/4498 [03:43<15:27:47, 12.43s/it]Loading weights:   0%|          | 19/4498 [03:44<14:21:15, 11.54s/it]Loading weights:   1%|          | 25/4498 [03:44<8:48:11,  7.09s/it] Loading weights:   1%|          | 39/4498 [03:44<3:50:24,  3.10s/it]Loading weights:   1%|          | 49/4498 [03:44<2:26:16,  1.97s/it]Loading weights:   1%|▏         | 58/4498 [03:44<1:39:43,  1.35s/it]Loading weights:   1%|▏         | 67/4498 [03:44<1:08:40,  1.08it/s]Loading weights:   2%|▏         | 75/4498 [03:44<49:21,  1.49it/s]  Loading weights:   2%|▏         | 83/4498 [03:44<35:22,  2.08it/s]Loading weights:   2%|▏         | 94/4498 [03:44<22:45,  3.22it/s]Loading weights:   2%|▏         | 107/4498 [03:45<14:21,  5.10it/s]Loading weights:   3%|▎         | 121/4498 [03:45<09:16,  7.87it/s]Loading weights:   3%|▎         | 135/4498 [03:45<06:14, 11.64it/s]Loading weights:   3%|▎         | 146/4498 [03:45<04:41, 15.44it/s]Loading weights:   3%|▎         | 157/4498 [03:45<03:35, 20.15it/s]Loading weights:   4%|▍         | 171/4498 [03:45<02:32, 28.45it/s]Loading weights:   4%|▍         | 183/4498 [03:45<01:58, 36.28it/s]Loading weights:   4%|▍         | 198/4498 [03:45<01:27, 49.11it/s]Loading weights:   5%|▍         | 223/4498 [03:46<00:55, 76.90it/s]Loading weights:   6%|▌         | 254/4498 [03:46<00:36, 114.92it/s]Loading weights:   7%|▋         | 299/4498 [03:46<00:23, 178.56it/s]Loading weights:   8%|▊         | 347/4498 [03:46<00:17, 242.92it/s]Loading weights:   9%|▉         | 398/4498 [03:46<00:13, 303.68it/s]Loading weights:  11%|█         | 473/4498 [03:46<00:09, 412.05it/s]Loading weights:  13%|█▎        | 602/4498 [03:46<00:06, 635.88it/s]Loading weights:  16%|█▌        | 724/4498 [03:46<00:04, 793.58it/s]Loading weights:  22%|██▏       | 969/4498 [03:46<00:02, 1254.56it/s]Loading weights:  33%|███▎      | 1484/4498 [03:46<00:01, 2358.99it/s]Loading weights:  47%|████▋     | 2132/4498 [03:47<00:00, 3548.18it/s]Loading weights:  62%|██████▏   | 2794/4498 [03:47<00:00, 4439.87it/s]Loading weights:  73%|███████▎  | 3266/4498 [03:47<00:00, 4522.18it/s]Loading weights: 100%|██████████| 4498/4498 [03:44<00:00, 20.01it/s]  
+[transformers] [1mEsmForProteinFolding LOAD REPORT[0m from: facebook/esmfold_v1
+Key                                | Status  | 
+-----------------------------------+---------+-
+esm.contact_head.regression.bias   | MISSING | 
+esm.contact_head.regression.weight | MISSING | 
+
+Notes:
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+Using device: cuda
+Predicting insulin_human (110 aa)...
+Mean pLDDT: 50.5 / 100
+Done. Saved insulin_human.pdb

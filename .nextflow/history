@@ -1,0 +1,1 @@
+2026-05-02 16:17:23	29m 55s	compassionate_heyrovsky	OK	a3fa2b4bf8e9b60605f31ac885183cfa	7f41dde9-6af5-44b8-b850-b29e608db535	nextflow run main.nf --input test_data/test_sequences.fasta --outdir results/test_run_01

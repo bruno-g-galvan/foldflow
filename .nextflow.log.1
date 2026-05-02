@@ -1,0 +1,155 @@
+May-01 23:01:51.843 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf --input test_data/test_sequences.fasta --outdir results/test_run_01 -resume
+May-01 23:01:51.932 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.0
+May-01 23:01:51.951 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/bgalvan/.nextflow/plugins; core-plugins: nf-amazon@3.9.0,nf-azure@1.22.2,nf-cloudcache@0.6.0,nf-codecommit@0.5.1,nf-console@1.3.0,nf-google@1.27.2,nf-k8s@1.5.2,nf-seqera@0.19.0,nf-tower@1.27.0,nf-wave@1.20.0
+May-01 23:01:51.975 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+May-01 23:01:51.975 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+May-01 23:01:51.978 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
+May-01 23:01:51.992 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+May-01 23:01:52.109 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
+May-01 23:01:52.114 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+May-01 23:01:52.143 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/bgalvan/projects/foldflow/nextflow.config
+May-01 23:01:52.146 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/bgalvan/projects/foldflow/nextflow.config
+May-01 23:01:52.149 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
+May-01 23:01:52.166 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+May-01 23:01:52.540 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+May-01 23:01:52.540 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+May-01 23:01:52.554 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/bgalvan/.nextflow/secrets/store.json
+May-01 23:01:52.557 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@1dbd580] - activable => nextflow.secret.LocalSecretsProvider@1dbd580
+May-01 23:01:52.568 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [confident_wing] - revision: a3fa2b4bf8
+May-01 23:01:52.654 [main] DEBUG nextflow.Session - Session UUID: 9bda1033-4618-4006-9714-b5cc58c26f62
+May-01 23:01:52.654 [main] DEBUG nextflow.Session - Run name: confident_wing
+May-01 23:01:52.655 [main] DEBUG nextflow.Session - Executor pool size: 8
+May-01 23:01:52.664 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+May-01 23:01:52.670 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+May-01 23:01:52.693 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 26.04.0 build 12031
+  Created: 29-04-2026 04:00 UTC 
+  System: Linux 5.15.167.4-microsoft-standard-WSL2
+  Runtime: Groovy 4.0.31 on OpenJDK 64-Bit Server VM 21.0.9-internal-adhoc.conda.src
+  Encoding: UTF-8 (UTF-8)
+  Process: 1947@DESKTOP-ER20J9N [127.0.1.1]
+  CPUs: 8 - Mem: 11.7 GB (10.1 GB) - Swap: 4 GB (4 GB)
+May-01 23:01:52.718 [main] DEBUG nextflow.Session - Work-dir: /home/bgalvan/projects/foldflow/work [ext2/ext3]
+May-01 23:01:52.718 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/bgalvan/projects/foldflow/bin
+May-01 23:01:52.731 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+May-01 23:01:52.740 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+May-01 23:01:52.742 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+May-01 23:01:52.774 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+May-01 23:01:52.783 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+May-01 23:01:52.870 [main] DEBUG nextflow.Session - Session start
+May-01 23:01:52.875 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
+May-01 23:01:53.155 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+May-01 23:01:53.354 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+May-01 23:01:53.355 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-01 23:01:53.364 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+May-01 23:01:53.372 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=11.7 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+May-01 23:01:53.374 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+May-01 23:01:53.436 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'VALIDATE_FASTA': maxForks=0; fair=false; array=0
+May-01 23:01:53.474 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:ESMFOLD` matches process ESMFOLD
+May-01 23:01:53.476 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+May-01 23:01:53.476 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-01 23:01:53.478 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'ESMFOLD': maxForks=0; fair=false; array=0
+May-01 23:01:53.486 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+May-01 23:01:53.487 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-01 23:01:53.488 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'EXTRACT_SCORES': maxForks=0; fair=false; array=0
+May-01 23:01:53.491 [main] DEBUG nextflow.Session - Process names: EXTRACT_SCORES, VALIDATE_FASTA, ESMFOLD
+May-01 23:01:53.494 [main] DEBUG nextflow.Session - Igniting dataflow network (4)
+May-01 23:01:53.500 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > VALIDATE_FASTA
+May-01 23:01:53.501 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > ESMFOLD
+May-01 23:01:53.501 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > EXTRACT_SCORES
+May-01 23:01:53.502 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  _nf_script_e68ac2151cc8f228: /home/bgalvan/projects/foldflow/modules/esmfold.nf
+  _nf_script_a3b1491da10c07ba: /home/bgalvan/projects/foldflow/modules/extract_scores.nf
+  Main: /home/bgalvan/projects/foldflow/main.nf
+  _nf_script_84b0bfe4087f8ca3: /home/bgalvan/projects/foldflow/modules/validate_fasta.nf
+May-01 23:01:53.502 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+May-01 23:01:53.502 [main] DEBUG nextflow.Session - Session await
+May-01 23:01:53.676 [Actor Thread 8] INFO  nextflow.processor.TaskProcessor - [14/ac77e8] Cached process > VALIDATE_FASTA (trp_cage)
+May-01 23:01:53.676 [Actor Thread 5] INFO  nextflow.processor.TaskProcessor - [45/c40237] Cached process > VALIDATE_FASTA (insulin_human)
+May-01 23:01:53.676 [Actor Thread 7] INFO  nextflow.processor.TaskProcessor - [72/1819d2] Cached process > VALIDATE_FASTA (villin_headpiece)
+May-01 23:01:53.774 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 23:01:53.776 [Task submitter] INFO  nextflow.Session - [63/cb27d4] Submitted process > ESMFOLD (insulin_human)
+May-01 23:01:55.126 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: ESMFOLD (insulin_human); status: COMPLETED; exit: 1; error: -; workDir: /home/bgalvan/projects/foldflow/work/63/cb27d47b75ed320fb7d980e92d4564]
+May-01 23:01:55.127 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+May-01 23:01:55.133 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 23:01:55.134 [Task submitter] INFO  nextflow.Session - [bf/14bc6c] Submitted process > ESMFOLD (trp_cage)
+May-01 23:01:55.136 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ESMFOLD (insulin_human); work-dir=/home/bgalvan/projects/foldflow/work/63/cb27d47b75ed320fb7d980e92d4564
+  error [nextflow.exception.ProcessFailedException]: Process `ESMFOLD (insulin_human)` terminated with an error exit status (1)
+May-01 23:01:55.150 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'ESMFOLD (insulin_human)'
+
+Caused by:
+  Process `ESMFOLD (insulin_human)` terminated with an error exit status (1)
+
+
+Command executed:
+
+  python3 -c "
+  import torch
+  import esm
+  
+  print('Loading ESMFold model...')
+  model = esm.pretrained.esmfold_v1()
+  model = model.eval()
+  
+  device = 'cuda' if torch.cuda.is_available() else 'cpu'
+  print('Using device: ' + device)
+  model = model.to(device)
+  
+  if device == 'cuda':
+      model = model.half()
+  
+  sequence = 'MALWMRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN'
+  protein_id = 'insulin_human'
+  print('Predicting structure for ' + protein_id + ' (' + str(len(sequence)) + ' aa)...')
+  
+  with torch.no_grad():
+      output = model.infer_pdb(sequence)
+  
+  with open(protein_id + '.pdb', 'w') as f:
+      f.write(output)
+  
+  print('Done. Saved ' + protein_id + '.pdb')
+      "
+
+Command exit status:
+  1
+
+Command output:
+  Loading ESMFold model...
+
+Command error:
+  Traceback (most recent call last):
+    File "<string>", line 6, in <module>
+    File "/home/bgalvan/miniconda3/envs/foldflow/lib/python3.11/site-packages/esm/pretrained.py", line 419, in esmfold_v1
+      import esm.esmfold.v1.pretrained
+    File "/home/bgalvan/miniconda3/envs/foldflow/lib/python3.11/site-packages/esm/esmfold/v1/pretrained.py", line 5, in <module>
+      from esm.esmfold.v1.esmfold import ESMFold
+    File "/home/bgalvan/miniconda3/envs/foldflow/lib/python3.11/site-packages/esm/esmfold/v1/esmfold.py", line 11, in <module>
+      from openfold.data.data_transforms import make_atom14_masks
+  ModuleNotFoundError: No module named 'openfold'
+  Loading ESMFold model...
+
+Work dir:
+  /home/bgalvan/projects/foldflow/work/63/cb27d47b75ed320fb7d980e92d4564
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+May-01 23:01:55.164 [TaskFinalizer-1] DEBUG nextflow.Session - Session aborted -- Cause: Process `ESMFOLD (insulin_human)` terminated with an error exit status (1)
+May-01 23:01:55.178 [TaskFinalizer-1] DEBUG nextflow.Session - The following nodes are still active:
+[process] EXTRACT_SCORES
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+May-01 23:01:55.183 [TaskFinalizer-1] WARN  n.processor.TaskPollingMonitor - Killing running tasks (1)
+May-01 23:01:55.206 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+May-01 23:01:55.211 [TaskFinalizer-1] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=3; pendingCount=1; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=1; succeedDuration=0ms; failedDuration=5.4s; cachedDuration=210ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=4; peakMemory=6 GB; ]
+May-01 23:01:55.362 [TaskFinalizer-1] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+May-01 23:01:55.822 [TaskFinalizer-1] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
+May-01 23:01:55.882 [main] DEBUG nextflow.Session - Session await > all processes finished
+May-01 23:01:55.882 [main] DEBUG nextflow.Session - Session await > all barriers passed
+May-01 23:01:55.884 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=3; pendingCount=1; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=1; succeedDuration=0ms; failedDuration=5.4s; cachedDuration=210ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=4; peakMemory=6 GB; ]
+May-01 23:01:55.884 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+May-01 23:01:56.141 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
+May-01 23:01:56.206 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+May-01 23:01:56.216 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

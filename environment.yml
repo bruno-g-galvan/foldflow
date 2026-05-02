@@ -1,0 +1,18 @@
+name: foldflow
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip>=23.0
+  - pip:
+    - torch>=2.6.0 --index-url https://download.pytorch.org/whl/cu124
+    - torchvision --index-url https://download.pytorch.org/whl/cu124
+    - transformers>=4.40.0
+    - accelerate
+    - biopython>=1.83
+    - pandas>=2.0
+    - fair-esm
+    - omegaconf
+    - einops
+    - scipy
